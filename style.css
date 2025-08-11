@@ -368,6 +368,30 @@ body {
     color: black;
 }
 
+.product-lingk {
+    background: radial-gradient(ellipse at top, #00ffb3 0%, #000 75%);
+}
+
+.product-lingk .lingk-logo{
+    color: #fff;
+}
+
+.product-lingk p {
+    color: #fff;
+}
+
+.product-lingk .btn {
+    background-color: #00ffb3;
+}
+
+.product-lingk .btn:hover {
+    background-color: #00ffb3;
+    box-shadow: 0 4px 20px rgba(0, 255, 179);
+}
+
+.product-lingk a {
+    color: #000;
+}
 .product-liveplay .btn {
     background-color: #ff6600;
 }
@@ -386,6 +410,10 @@ body {
     font-weight: 900;
 }
 
+.lingk-logo {
+    font-family: 'TT Fors Trial', sans-serif;
+    font-weight: 900;
+}
 .product h4 {
     font-size: 2rem;
     margin-bottom: 1rem;
