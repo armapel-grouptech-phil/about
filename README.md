@@ -1,7 +1,7 @@
 # Armapel
 
 <div align="center">
-  <img src="URL_TO_YOUR_LOGO.png" alt="Armapel Logo" width="200"/>
+  <img src="[URL](https://raw.githubusercontent.com/armapeltech/liveplay/refs/heads/main/logo/armapel-logo-black.png)" alt="Armapel Logo" width="200"/>
 </div>
 
 ### Architecting the Digital Future from the Philippines
