@@ -110,9 +110,9 @@ body .material-symbols-outlined {
 .product-content { position: relative; z-index: 1; }
 .product-card h4 { font-size: 2.5rem; font-weight: 800; }
 .product-card p { font-size: 1rem; color: rgba(255, 255, 255, 0.8); margin: 0.5rem 0 1.5rem 0; }
-.product-liveplay { background: url('bg/liveplay.svg'); pointer-events: none; }
-.product-lingk { background: url(bg/lingk.svg); pointer-events: none; }
-.product-uzer { background: url(bg/uzer.svg); pointer-events: none; }
+.product-liveplay { background: url('bg/liveplay.svg'); }
+.product-lingk { background: url(bg/lingk.svg); }
+.product-uzer { background: url(bg/uzer.svg); }
 .product-liveplay h4, .product-liveplay p, .product-liveplay { color: #fff; }
 .product-lingk h4, .product-lingk p, .product-lingk { color: #fff; }
 .product-uzer h4, .product-uzer p, .product-uzer { color: #fff; }
