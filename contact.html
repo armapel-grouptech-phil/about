@@ -4,42 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armapel - Contact & Collaborations</title>
+    <link rel="icon" type="image/png" href="logo/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="logo/favicon.svg" />
+    <link rel="shortcut icon" href="logo/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png" />
+    <link rel="manifest" href="logo/site.webmanifest" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/space-grotesk" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
 </head>
-<body>
+<body class="subpage-body">
 
-    <div class="background-animation"></div>
+    <div class="aurora-background">
+        <div class="aurora-dot"></div>
+        <div class="aurora-dot"></div>
+        <div class="aurora-dot"></div>
+    </div>
 
     <header class="header">
-        <nav class="navbar">
-            <a class="nav-logo">
-                <img src="https://raw.githubusercontent.com/armapeltech/liveplay/refs/heads/main/logo/armapel-logo-white.png" alt="Armapel Logo">
+        <nav class="navbar container subpage-nav">
+            <a href="index.html" class="header-back-link">
+                <span class="material-symbols-outlined">arrow_back</span>
             </a>
-            <a href="index.html" class="back-link">
-                <span class="material-symbols-outlined">close</span>
-            </a>
+            <h1 class="subpage-header-title">Contact & Collaborations</h1>
         </nav>
     </header>
 
-    <main class="container page-container">
-        <section id="contact" class="card">
-            <h2>Contact & Collaborations</h2>
-            <p class="section-description">We're always open to new ideas and partnerships. Let's connect and build the future together.</p>
-            <div class="contact-links">
-                <a href="mailto:arbiepeligro2007@gmail.com" class="contact-item">
-                    <span class="material-symbols-outlined">email</span>
-                     support@armapel.ph
+    <main>
+        <div class="main-container container page-container">
+            <section id="contact" class="content-card">
+                <p class="section-description">We're always open to new ideas and partnerships. Let's connect and build the future together.</p>
+                <a href="https://m.me/armapel" target="_blank" class="contact-item">
+                    <img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Facebook_Messenger_logo_2025.svg/2048px-Facebook_Messenger_logo_2025.svg.png" alt="Messenger"
+                    <span>Message us on Messenger</span>
                 </a>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
-    <footer class="footer">
-        <p>© 2025 Armapel. All Rights Reserved.</p>
-    </footer>
+    <script>
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 10);
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.content-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 
 </body>
 </html>
