@@ -263,10 +263,10 @@ body .material-symbols-outlined {
 .contact-item span { color: var(--text-primary); font-weight: 500; }
 .contact-icon { width: 24px; height: 24px; }
 .contact-section-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
 }
 .contact-divider {
     height: 1px;
@@ -287,6 +287,7 @@ body .material-symbols-outlined {
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
+    font-weight: 500;
 }
 .form-group input,
 .form-group textarea,
@@ -302,24 +303,51 @@ body .material-symbols-outlined {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    width: 100%;
 }
-
-select:invalid {
+.form-group input::placeholder,
+.form-group textarea::placeholder {
     color: #6a6a6e;
-
-select option:not(:disabled) {
-    color: var(--text-primary);
+    opacity: 1;
 }
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.form-group select:focus {
     outline: none;
     border-color: var(--accent-primary);
-    box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.3);
+    box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.3);
 }
 .form-group textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 150px;
+    line-height: 1.6;
 }
+select:invalid {
+    color: #6a6a6e;
+}
+select option:not(:disabled) {
+    color: var(--text-primary);
+}
+.select-wrapper {
+    position: relative;
+}
+.select-arrow-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    pointer-events: none;
+    transition: transform 0.3s ease;
+}
+.select-arrow-icon.active {
+    transform: translateY(-50%) rotate(180deg);
+}
+.form-group select option {
+    background-color: #1a1a1a;
+    color: var(--text-primary);
+}
+
 .btn-form {
     background-color: var(--text-primary);
     color: var(--bg-color);
@@ -329,10 +357,11 @@ select option:not(:disabled) {
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
 }
 .btn-form:hover {
     opacity: 0.9;
+    transform: scale(1.02);
 }
 
 .faq-list { display: flex; flex-direction: column; gap: 0.5rem; }
