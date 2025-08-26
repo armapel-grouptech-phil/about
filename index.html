@@ -28,11 +28,11 @@
 
     <header class="header">
         <nav class="navbar container">
-            <a href="#" class="nav-logo">
-            <img src="logo/armapel-logo-white.png"</a>
+            <a href="/" class="nav-logo">
+            <img src="logo/armapel-logo-white.png" alt="Armapel Logo"></a>
             <div class="desktop-menu">
-                <a href="contact.html" class="nav-link">Contact</a>
-                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="/contact" class="nav-link">Contact</a>
+                <a href="/faq" class="nav-link">FAQ</a>
             </div>
             <button class="menu-icon" onclick="toggleMenu()">
                 <span class="material-symbols-outlined" id="menuIcon">menu</span>
@@ -41,8 +41,8 @@
     </header>
 
     <div class="floating-menu" id="floatingMenu">
-        <a href="contact.html" class="menu-item">Contact</a>
-        <a href="faq.html" class="menu-item">FAQ</a>
+        <a href="/contact" class="menu-item">Contact</a>
+        <a href="/faq" class="menu-item">FAQ</a>
     </div>
 
     <main>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="hero-card-buttons">
                     <a href="#services" class="btn-hero primary">Explore Products</a>
-                    <a href="contact.html" class="btn-hero secondary">Get in Touch</a>
+                    <a href="/contact" class="btn-hero secondary">Get in Touch</a>
                 </div>
             </div>
         </section>
@@ -150,6 +150,29 @@
                 </div>
             </section>
             
+            <section id="partners" class="content-card">
+                <h2>Our Partners</h2>
+                <p class="section-description">We collaborate with industry-leading technology partners to build and deliver our innovative digital solutions.</p>
+                <div class="partner-grid">
+                    <div class="partner-item">
+                        <a href="https://vercel.com?utm_source=armapel&utm_campaign=oss" target="_blank" rel="noopener noreferrer" class="partner-link">
+                            <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" alt="Vercel Logo" class="partner-img">
+                        </a>
+                        <p class="partner-description">
+                            <strong>Vercel</strong> provides the frontend cloud infrastructure, ensuring our websites are fast, scalable, and always available globally.
+                        </p>
+                    </div>
+                    <div class="partner-item">
+                        <a href="https://supabase.com?utm_source=armapel" target="_blank" rel="noopener noreferrer" class="partner-link">
+                             <img src="https://supabase.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsupabase-logo-wordmark--dark.265d388f.svg&w=256&q=75" alt="Supabase Logo" class="partner-img">
+                        </a>
+                        <p class="partner-description">
+                            <strong>Supabase</strong> powers our backend with its open-source Firebase alternative, providing database, authentication, and storage solutions for products like Liveplay.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             <section id="mission" class="content-card">
                 <h2>Our Mission</h2>
                 <p>Armapel's mission is to masterfully engineer a diverse portfolio of digital products. For our business clients, we deliver bespoke, high-quality web solutions. For the Filipino consumer, we are committed to developing innovative and accessible platforms. Through every line of code, we are dedicated to building a better digital future for the Philippines.</p>
