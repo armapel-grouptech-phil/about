@@ -343,9 +343,13 @@ select option:not(:disabled) {
 .select-arrow-icon.active {
     transform: translateY(-50%) rotate(180deg);
 }
+
 .form-group select option {
     background-color: #1a1a1a;
     color: var(--text-primary);
+}
+select option:disabled {
+    color: #6a6a6e;
 }
 
 .btn-form {
