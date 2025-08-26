@@ -88,6 +88,20 @@
     </main>
 
     <script>
+        const selectElement = document.getElementById('subject');
+        const arrowIcon = document.querySelector('.select-arrow-icon');
+
+        selectElement.addEventListener('focus', () => {
+            arrowIcon.classList.add('active');
+            arrowIcon.textContent = 'expand_less';
+        });
+
+        selectElement.addEventListener('blur', () => {
+            arrowIcon.classList.remove('active');
+            arrowIcon.textContent = 'expand_more';
+        });
+
+
         const header = document.querySelector('.header');
         window.addEventListener('scroll', () => {
             header.classList.toggle('scrolled', window.scrollY > 10);
