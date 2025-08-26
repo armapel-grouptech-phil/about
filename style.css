@@ -263,6 +263,17 @@ body .material-symbols-outlined {
 .contact-item:hover { background-color: var(--border-color); }
 .contact-item span { color: var(--text-primary); font-weight: 500; }
 .contact-icon { width: 20px; height: 20px; color: var(--accent-primary); }
+.form-group input,
+.form-group textarea,
+.form-group select {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s; }
 .faq-list { display: flex; flex-direction: column; gap: 0.5rem; }
 .faq-item { border-bottom: 1px solid var(--border-color); }
 .faq-item:last-child { border-bottom: none; }
