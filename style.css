@@ -300,6 +300,30 @@ body .material-symbols-outlined {
     font-family: inherit;
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: '▼';
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.form-group select option {
+    background-color: #1a1a1a;
+    color: var(--text-primary);
 }
 .form-group input:focus,
 .form-group textarea:focus {
