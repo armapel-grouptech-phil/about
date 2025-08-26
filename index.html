@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Display:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/tt-hoves-pro-trial" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/tt-fors-trial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -31,7 +32,7 @@
             <a href="/" class="nav-logo">
             <img src="logo/armapel-logo-white.png" alt="Armapel Logo"></a>
             <div class="desktop-menu">
-                <a href="/contact" class="nav-link">Contact</a>
+                <a href="/contact" class="nav-link">Contact & Collaboration</a>
                 <a href="/faq" class="nav-link">FAQ</a>
             </div>
             <button class="menu-icon" onclick="toggleMenu()">
@@ -40,10 +41,16 @@
         </nav>
     </header>
 
-    <div class="floating-menu" id="floatingMenu">
-        <a href="/contact" class="menu-item">Contact</a>
-        <a href="/faq" class="menu-item">FAQ</a>
-    </div>
+   <div class="floating-menu" id="floatingMenu">
+    <a href="/contact" class="menu-item">
+        <span class="material-symbols-outlined">arrow_outward</span>
+        <span>Contact & Collaboration</span>
+    </a>
+    <a href="/faq" class="menu-item">
+        <span class="material-symbols-outlined">arrow_outward</span>
+        <span>Frequently Asked Questions</span>
+    </a>
+</div>
 
     <main>
         <section class="hero">
@@ -154,21 +161,19 @@
                 <h2>Our Sponsors</h2>
                 <p class="section-description">We are proud to partner with these industry leaders who provide the foundational technology for our projects.</p>
                 <div class="sponsors-list">
-                    <!-- Sponsor Item -->
                     <div class="sponsor-item">
                         <div class="sponsor-logo-container">
-                             <h3 class="sponsor-logo-text google-ai-logo">Google AI</h3>
+                             <h3 class="sponsor-logo-text google-ai-logo">Google <strong>AI</strong></h3>
                         </div>
                         <div class="sponsor-text-container">
                             <h4 class="sponsor-title">Google AI</h4>
                             <p class="sponsor-description">We extend our gratitude to Google's Gemini for being an integral part of our creative and development toolkit, enabling us to enhance our products with intelligent solutions.</p>
                         </div>
                     </div>
-                    <!-- Sponsor Item -->
                     <div class="sponsor-item">
                         <div class="sponsor-logo-container">
                             <a href="https://vercel.com?utm_source=armapel&utm_campaign=oss" target="_blank" rel="noopener noreferrer">
-                                <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" alt="Vercel Logo" class="sponsor-logo">
+                            <img src="https://vercel.com/vc-ap-vercel-marketing/_next/static/media/vercel-logotype-dark.9f447f76.svg" alt="Vercel Logo" class="sponsor-logo">
                             </a>
                         </div>
                         <div class="sponsor-text-container">
@@ -176,11 +181,10 @@
                             <p class="sponsor-description">Vercel provides the world-class frontend cloud infrastructure that ensures our websites are fast, scalable, and consistently available to users worldwide.</p>
                         </div>
                     </div>
-                    <!-- Sponsor Item -->
                     <div class="sponsor-item">
                         <div class="sponsor-logo-container">
                             <a href="https://github.com?utm_source=armapel" target="_blank" rel="noopener noreferrer">
-                               <img src="https://raw.githubusercontent.com/rdimascio/icons/master/icons/dark/github.svg" alt="GitHub Logo" class="sponsor-logo">
+                               <img src="https://storage.googleapis.com/parsera-public/pages/home/github_logo.png" alt="GitHub Logo" class="github-logo">
                             </a>
                         </div>
                         <div class="sponsor-text-container">
@@ -188,26 +192,36 @@
                             <p class="sponsor-description">As the backbone of our development process, GitHub hosts our code repositories, fostering a collaborative and efficient workflow through powerful version control.</p>
                         </div>
                     </div>
-                    <!-- Sponsor Item -->
-                    <div class="sponsor-item">
+                        <div class="sponsor-item">
                         <div class="sponsor-logo-container">
+                        <div class="shaka-logo-wrapper">
+                        <img src="https://shaka-player-demo.appspot.com/demo/shaka_logo_trans.png" alt="Shaka Player Icon" class="shaka-icon">
                             <h3 class="sponsor-logo-text shaka-logo">Shaka Player</h3>
                         </div>
+                    </div>
                         <div class="sponsor-text-container">
-                            <h4 class="sponsor-title">Shaka Player</h4>
-                            <p class="sponsor-description">The high-performance, open-source video player from Google that is the core of our Liveplay and Lingk streaming platforms, ensuring a smooth viewing experience.</p>
+                        <h4 class="sponsor-title">Shaka Player</h4>
+                        <p class="sponsor-description">The high-performance, open-source video player from Google that is the core of our Liveplay and Lingk streaming platforms, ensuring a smooth viewing experience.</p>
                         </div>
                     </div>
-                    <!-- Sponsor Item -->
                     <div class="sponsor-item">
                         <div class="sponsor-logo-container">
                             <a href="https://supabase.com?utm_source=armapel" target="_blank" rel="noopener noreferrer">
-                                <img src="https://supabase.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsupabase-logo-wordmark--dark.265d388f.svg&w=256&q=75" alt="Supabase Logo" class="sponsor-logo">
+                                <img src="https://raw.githubusercontent.com/supabase/supabase/master/packages/common/assets/images/supabase-logo-wordmark--dark.png" alt="Supabase Logo" class="sponsor-logo">
                             </a>
                         </div>
                         <div class="sponsor-text-container">
                             <h4 class="sponsor-title">Supabase</h4>
                             <p class="sponsor-description">Supabase serves as our scalable backend, providing robust database, authentication, and storage solutions for the login and user management features in Liveplay.</p>
+                        </div>
+                    </div>
+                    <div class="sponsor-item">
+                        <div class="sponsor-logo-container">
+                        <h3 class="sponsor-logo-text google-fonts-logo">Google <strong>Fonts</strong></h3>
+                        </div>
+                        <div class="sponsor-text-container">
+                        <h4 class="sponsor-title">Google Fonts</h4>
+                        <p class="sponsor-description">The extensive library of open-source fonts and icons that allows us to create a clean, readable, and visually appealing user interface across our digital products.</p>
                         </div>
                     </div>
                 </div>
