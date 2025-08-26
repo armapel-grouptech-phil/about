@@ -42,12 +42,14 @@ body .material-symbols-outlined {
 .nav-link { font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); text-decoration: none; transition: color 0.3s ease; }
 .nav-link:hover { color: var(--text-primary); }
 .menu-icon { display: none; background: none; border: none; color: var(--text-primary); cursor: pointer; }
-.floating-menu { position: fixed; top: 0; right: -100%; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); z-index: 99; display: flex; flex-direction: column; justify-content: center; align-items: left; padding-left:  50px; gap: 2rem; transition: right 0.4s ease-in-out; }
+.floating-menu { position: fixed; top: 0; right: -100%; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); z-index: 99; display: flex; flex-direction: column; justify-content: center; align-items: left; padding: 0 50px 0 50px; gap: 2rem; transition: right 0.4s ease-in-out; }
 .floating-menu.active { right: 0; }
 
 .floating-menu .menu-item {
     color: var(--text-primary);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    line-height: 2.0rem;
+    margin-bottom: 1rem;
     text-decoration: none;
     opacity: 0;
     transform: translateX(-30px);
@@ -176,7 +178,7 @@ body .material-symbols-outlined {
 .google-ai-logo {
     font-family: 'Google Sans Display', sans-serif;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .google-ai-logo strong {
     font-weight: 200;
@@ -208,7 +210,7 @@ body .material-symbols-outlined {
 .google-fonts-logo {
     font-family: 'Google Sans Display', sans-serif;
     font-weight: 500;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     letter-spacing: -0.5px;
 }
 .google-fonts-logo strong {
@@ -286,7 +288,7 @@ body .material-symbols-outlined {
     .shaka-logo {
     font-family: 'Google Sans Display', sans-serif;
     font-weight: 400;
-    font-size: 1.75rem;
+    font-size: 1.7rem;
     }
     .shaka-logo-wrapper {
         justify-content: flex-start;
